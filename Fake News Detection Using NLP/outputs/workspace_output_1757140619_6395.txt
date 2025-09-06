@@ -1,0 +1,115 @@
+
+    ╔═══════════════════════════════════════════════════════════════╗
+    ║                FAKE NEWS DETECTION PROJECT                   ║
+    ║                    Quick Start Guide                         ║
+    ╚═══════════════════════════════════════════════════════════════╝
+    
+✅ Python version check passed
+
+🚀 Starting Fake News Detection Project Setup...
+📦 Installing dependencies...
+Collecting pandas (from -r requirements.txt (line 2))
+  Downloading pandas-2.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (91 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.2/91.2 kB 8.8 MB/s eta 0:00:00
+Collecting numpy (from -r requirements.txt (line 3))
+  Downloading numpy-2.3.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 20.7 MB/s eta 0:00:00
+Collecting scikit-learn (from -r requirements.txt (line 4))
+  Downloading scikit_learn-1.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting matplotlib (from -r requirements.txt (line 5))
+  Downloading matplotlib-3.10.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting seaborn (from -r requirements.txt (line 6))
+  Downloading seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting joblib (from -r requirements.txt (line 7))
+  Downloading joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting nltk (from -r requirements.txt (line 8))
+  Downloading nltk-3.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting python-dateutil>=2.8.2 (from pandas->-r requirements.txt (line 2))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas->-r requirements.txt (line 2))
+  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas->-r requirements.txt (line 2))
+  Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting scipy>=1.8.0 (from scikit-learn->-r requirements.txt (line 4))
+  Downloading scipy-1.16.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 21.4 MB/s eta 0:00:00
+Collecting threadpoolctl>=3.1.0 (from scikit-learn->-r requirements.txt (line 4))
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->-r requirements.txt (line 5))
+  Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 5))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib->-r requirements.txt (line 5))
+  Downloading fonttools-4.59.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (109 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.7/109.7 kB 15.2 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib->-r requirements.txt (line 5))
+  Downloading kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.3 kB)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.11/site-packages (from matplotlib->-r requirements.txt (line 5)) (25.0)
+Requirement already satisfied: pillow>=8 in /usr/local/lib/python3.11/site-packages (from matplotlib->-r requirements.txt (line 5)) (10.2.0)
+Collecting pyparsing>=2.3.1 (from matplotlib->-r requirements.txt (line 5))
+  Downloading pyparsing-3.2.3-py3-none-any.whl.metadata (5.0 kB)
+Requirement already satisfied: click in /usr/local/lib/python3.11/site-packages (from nltk->-r requirements.txt (line 8)) (8.2.1)
+Collecting regex>=2021.8.3 (from nltk->-r requirements.txt (line 8))
+  Downloading regex-2025.9.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 kB 18.2 MB/s eta 0:00:00
+Collecting tqdm (from nltk->-r requirements.txt (line 8))
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.7/57.7 kB 29.8 MB/s eta 0:00:00
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas->-r requirements.txt (line 2))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading pandas-2.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 177.9 MB/s eta 0:00:00
+Downloading numpy-2.3.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 261.5 MB/s eta 0:00:00
+Downloading scikit_learn-1.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 287.8 MB/s eta 0:00:00
+Downloading matplotlib-3.10.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 156.6 MB/s eta 0:00:00
+Downloading seaborn-0.13.2-py3-none-any.whl (294 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.9/294.9 kB 114.9 MB/s eta 0:00:00
+Downloading joblib-1.5.2-py3-none-any.whl (308 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 308.4/308.4 kB 120.3 MB/s eta 0:00:00
+Downloading nltk-3.9.1-py3-none-any.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 225.7 MB/s eta 0:00:00
+Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 355.2/355.2 kB 137.8 MB/s eta 0:00:00
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.59.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 271.3 MB/s eta 0:00:00
+Downloading kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 104.5 MB/s eta 0:00:00
+Downloading pyparsing-3.2.3-py3-none-any.whl (111 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.1/111.1 kB 56.7 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 98.3 MB/s eta 0:00:00
+Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 509.2/509.2 kB 121.4 MB/s eta 0:00:00
+Downloading regex-2025.9.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (798 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 799.0/799.0 kB 161.0 MB/s eta 0:00:00
+Downloading scipy-1.16.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (35.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.4/35.4 MB 41.4 MB/s eta 0:00:00
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 347.8/347.8 kB 61.8 MB/s eta 0:00:00
+Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 20.6 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, tzdata, tqdm, threadpoolctl, six, regex, pyparsing, numpy, kiwisolver, joblib, fonttools, cycler, scipy, python-dateutil, nltk, contourpy, scikit-learn, pandas, matplotlib, seaborn
+Successfully installed contourpy-1.3.3 cycler-0.12.1 fonttools-4.59.2 joblib-1.5.2 kiwisolver-1.4.9 matplotlib-3.10.6 nltk-3.9.1 numpy-2.3.2 pandas-2.3.2 pyparsing-3.2.3 python-dateutil-2.9.0.post0 pytz-2025.2 regex-2025.9.1 scikit-learn-1.7.1 scipy-1.16.1 seaborn-0.13.2 six-1.17.0 threadpoolctl-3.6.0 tqdm-4.67.1 tzdata-2025.2
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip is available: 24.0 -> 25.2
+[notice] To update, run: pip install --upgrade pip
+✅ Dependencies installed successfully
+✅ Sample data created
+🤖 Creating baseline model...
+✅ Baseline model created
+
+✅ Quick setup complete!
+
+Next steps:
+1. Run: python project_setup.py
+2. Open: notebooks/main_analysis.ipynb
+3. Follow the daily tracker in daily_tracker.md
+
+Happy coding! 🎯
